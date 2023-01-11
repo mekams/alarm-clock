@@ -42,21 +42,13 @@
     
   }
 
-
-  /* .content.disable{
-    cursor: no-drop;
-  } */
-  
   .content .column{
     padding: 0 10px;
     border-radius: 5px;
     border: 1px solid #bfbfbf;
     width: calc(100% / 3 - 5px);
   }
-  /* .content.disable .column{
-    opacity: 0.6;
-    pointer-events: none;
-  } */
+
   .column select{
     width: 110%;
     height: 50px;
@@ -84,19 +76,8 @@
   }
 
 
-  /* to make responsive  */
-  @media (width<450px) {
-    .wrapper{
-        margin: 5% 20%;
-      }
-  }
-  @media (height<717px) {
-    .wrapper{
-        margin: 5% 20%;
-    }
-  }
 
-  
+
 /* footer design */
   .wrap{
     position:absolute;
@@ -117,4 +98,48 @@ footer{
 
  footer:hover{
     color: rgba(255, 255, 255, 0.692);
+}
+
+
+
+.hand {
+  width: 50%;
+  right: 50%;
+  height: 7.5px;
+  background: #0452d0;
+  position: absolute;
+  top: 33.5%;
+  border-radius: 7px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.hand.hour-hand {
+  width:3.7%;
+  z-index: 1;
+}
+.hand.min-hand {
+  height: 3px;
+  z-index: 10;
+  width: 4%;
+}
+.hand.second-hand {
+  background: #ee791a;
+  width: 5%;
+  height: 3px;
+}
+
+
+
+
+/* to make responsive  */
+@media (width<450px) {
+  .wrapper{
+      margin: 5% 20%;
+    }
+}
+@media (height<717px) {
+  .wrapper{
+      margin: 5% 20%;
+  }
 }
