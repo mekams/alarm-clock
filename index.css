@@ -96,21 +96,25 @@
     }
   }
 
-  footer{
-    /* background-color: black; */
+  
+/* footer design */
+  .wrap{
+    position:absolute;
+    bottom:0%;
+    width:100%;
+    margin:0% 0% 0%
+}
+footer{
+      /* background-color: black; */
     /* background: linear-gradient(black,red,yellow); */
-    background: radial-gradient(rgba(0, 0, 0, 0.393),rgba(114, 94, 82, 0.678));
-    color: rgb(244, 255, 39);
-    height:3%;
+    background: radial-gradient(rgba(0, 0, 0, 0.393),rgba(138, 151, 77, 0.437));
+    color: rgba(18, 19, 17, 0.347);
+    height:2.8%;
     text-align: center;
-    margin:20px 0px 0px;
+    padding:1.5px 2px 1px;
+    margin: 0px;
 }
 
-.wrap{
-    position:absolute;
-    bottom:0px;
-    width:100%;
-}
  footer:hover{
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.692);
 }
