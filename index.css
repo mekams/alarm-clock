@@ -83,7 +83,6 @@
     background: url("./image/alarmclock.png") no-repeat;
     /*setting our background image*/
     background-size: 50%;
-    align-content: center;
   }
   
   #hour,
@@ -119,9 +118,16 @@
     opacity: 0.8;
   }
   
+  #headclock{
+    font-size: 50px;
+    position: absolute;
+    /* height: 20%; */
+    left: 50%;
+    bottom:20%
+  }
 
   /* to make responsive  */
-  @media (width<450px) {
+  /* @media (width<450px) {
     .wrapper{
         margin: 5% 20%;
       }
@@ -130,4 +136,4 @@
     .wrapper{
         margin: 5% 20%;
     }
-  }
+  } */
