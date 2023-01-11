@@ -1,2 +1,2 @@
 # alarm-clock
-# Alarm can be set and bell it.
+Alarm can be set and bell it.
