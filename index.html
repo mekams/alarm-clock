@@ -1,50 +1,52 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
-    <link rel="manifest" href="./image/site.webmanifest">
-    <link rel="mask-icon" href="./image/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>Alarm Clock</title>
-    <link rel="stylesheet" href="index.css"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./image/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">
+  <link rel="manifest" href="./image/site.webmanifest">
+  <link rel="mask-icon" href="./image/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Alarm Clock</title>
+  <link rel="stylesheet" href="index.css">
 </head>
+
+<body>
     <div class="wrapper">
-        <img src="./image/alarmclock.jpg"alt="clock">
-        <div class="hand hour-hand"></div>
-        <div class="hand min-hand"></div>
-        <div class="hand second-hand"></div>
-        <h1>00:00:00 PM</h1>
-        <div class="content">
-          <div class="column">
-            <select>
-              <option value="Hour" selected disabled hidden>Hour</option>
-            </select>
-          </div>
-          <div class="column">
-            <select>
-              <option value="Minute" selected disabled hidden>Minute</option>
-            </select>
-          </div>
-          <div class="column">
-            <select>
-              <option value="AM/PM" selected disabled hidden>AM/PM</option>
-            </select>
-          </div>
+        <div id="clockContainer">
+          <div id="hour"></div>
+          <div id="minute"></div>
+          <div id="second"></div>
         </div>
-        <button>Set Alarm</button>
-        <div class="wrap">
-          <footer>
-              &#60; / &#62;❤️ Kamran Mustafa &copy copyright 2022-23😃 <!-- </> -->
-          </footer>
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
       </div>
-      </div>
-    <script src ="script.js"></script>
+      <button>Set Alarm</button>
+    </div>
+    <footer>
+      <!-- <p>&#60; / &#62;❤️ Kamran Mustafa &copy copyright 2022-23😃</p>  -->
+    </footer>
+    <script src="script.js"></script>
     <script src="liveHands.js"></script>
 </body>
-</html>
 
+</html>

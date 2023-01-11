@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
   }
 
 
@@ -18,8 +18,9 @@
   }
 
 
+
   .wrapper{
-    width: 440px;
+    /* width: 440px; */
     padding: 30px 30px 38px;
     background: rgb(255, 255, 255);
     border-radius: 50px;
@@ -27,17 +28,13 @@
     box-shadow: 0 10px 25px rgb(49, 158, 216);
   }
   
-  .wrapper img{
-    max-width: 253px;
-    
-  }
   .wrapper h1{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0;
+    font-size: 24px;
+    font-weight:400;
+    margin: 15px 0;
   }
   .wrapper .content{
-    width: 100%;
+    width: auto;
     justify-content: space-between;
     
   }
@@ -46,26 +43,25 @@
     padding: 0 10px;
     border-radius: 5px;
     border: 1px solid #bfbfbf;
-    width: calc(100% / 3 - 5px);
+    width: calc(100% / 3 - 1px);
   }
+
 
   .column select{
     width: 110%;
-    height: 50px;
+    height: 5vh;
     border:none;
-    outline: none;
-    background: none;
-    font-size: 14px;
+    font-size: 10px;
   }
   .wrapper button{
-    width: 100%;
+    width: 100px;
+    height: 25px;
     border: none;
     outline: none;
     color: #fff;
     cursor: pointer;
-    font-size: 20px;
-    padding: 17px 0;
-    margin-top: 20px;
+    font-size: 15px;
+    margin-top: 10px;
     border-radius: 50px;
     background: #047ef1db;
     transition: 0.5s ease;
@@ -75,71 +71,60 @@
     color: rgb(0, 0, 0);
   }
 
-
-
-
-/* footer design */
-  .wrap{
-    position:absolute;
-    bottom:0%;
-    width:100%;
-    margin:0% 0% 0%
-}
-footer{
-      /* background-color: black; */
-    /* background: linear-gradient(black,red,yellow); */
-    background: radial-gradient(rgba(0, 0, 0, 0.393),rgba(138, 151, 77, 0.437));
-    color: rgba(18, 19, 17, 0.347);
-    height:2.8%;
-    text-align: center;
-    padding:1.5px 2px 1px;
-    margin: 0px;
-}
-
- footer:hover{
-    color: rgba(255, 255, 255, 0.692);
-}
-
-
-
-.hand {
-  width: 50%;
-  right: 50%;
-  height: 7.5px;
-  background: #0452d0;
-  position: absolute;
-  top: 33.5%;
-  border-radius: 7px;
-  transform-origin: 100%;
-  transform: rotate(90deg);
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-.hand.hour-hand {
-  width:3.7%;
-  z-index: 1;
-}
-.hand.min-hand {
-  height: 3px;
-  z-index: 10;
-  width: 4%;
-}
-.hand.second-hand {
-  background: #ee791a;
-  width: 5%;
-  height: 3px;
-}
-
-
-
-
-/* to make responsive  */
-@media (width<450px) {
-  .wrapper{
-      margin: 5% 20%;
-    }
-}
-@media (height<717px) {
-  .wrapper{
-      margin: 5% 20%;
+  #clockContainer {
+    position: relative;
+    margin: auto;
+    height: 32.5vw;
+    /*to make the height and width responsive*/
+    width: 63vw;
+    background: url("./image/alarmclock.png") no-repeat;
+    /*setting our background image*/
+    background-size: 50%;
+    align-content: center;
   }
-}
+  
+  #hour,
+  #minute,
+  #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+  }
+  
+  #hour {
+    width: 1.8%;
+    height: 21%;
+    top: 36%;
+    left: 23.85%;
+    opacity: 0.8;
+  }
+  
+  #minute {
+    width: 1.6%;
+    height: 27%;
+    top: 28%;
+    left: 24.9%;
+    opacity: 0.8;
+  }
+  
+  #second {
+    width: 1%;
+    height: 27%;
+    top: 28%;
+    left: 24.25%;
+    opacity: 0.8;
+  }
+  
+
+  /* to make responsive  */
+  @media (width<450px) {
+    .wrapper{
+        margin: 5% 20%;
+      }
+  }
+  @media (height<717px) {
+    .wrapper{
+        margin: 5% 20%;
+    }
+  }
