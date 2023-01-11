@@ -119,3 +119,15 @@
     opacity: 0.8;
   }
   
+
+  /* to make responsive  */
+  @media (width<450px) {
+    body{
+        margin: 5% 10%;
+      }
+  }
+  @media (height<717px) {
+    body{
+        margin: 5% 20%;
+    }
+  }
