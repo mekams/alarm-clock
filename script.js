@@ -1,10 +1,11 @@
-const currentTime = document.querySelector("h1"),
+// Storing value in the variables
+const currentTime = document.querySelector("h1"),  
 content = document.querySelector(".content"),
 selectMenu = document.querySelectorAll("select"),
 setAlarmBtn = document.querySelector("button");
 
-let alarmTime, isAlarmSet,
-ringtone = new Audio("./image/alarm_tone.mp3");
+let alarmTime, isAlarmSet
+let ringtone = new Audio("./image/alarm_tone.mp3");   //fetched ringtone
 
 for (let i = 12; i > 0; i--) {
     i = i < 10 ? `0${i}` : i;
@@ -43,7 +44,7 @@ setInterval(() => {
     if (alarmTime === `${h}:${m} ${ampm}`) {
         ringtone.play();
         ringtone.loop = true;
-    }
+    }                                                           // alarm set then ringtone start playing but function is down to chandle it
 });
 
 function setAlarm() {
@@ -52,13 +53,13 @@ function setAlarm() {
         ringtone.pause();
         content.classList.remove("disable");
         setAlarmBtn.innerText = "Set Alarm";
-        return isAlarmSet = false;
+        return isAlarmSet = false;                                                      
     }
 
     let time = `${selectMenu[0].value}:${selectMenu[1].value} ${selectMenu[2].value}`;
     if (time.includes("Hour") || time.includes("Minute") || time.includes("AM/PM")) {
         return alert("Please, select a valid time to set Alarm!");
-    }
+    }                                                                                   //throws an error message
     alarmTime = time;
     isAlarmSet = true;
     content.classList.add("disable");
