@@ -128,6 +128,11 @@
    
   }
 
+
+  footer{
+    position: absolute;
+    bottom:0%;
+  }
   /* to make responsive  */
   /* @media (width<450px) {
     .wrapper{
